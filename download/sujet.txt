@@ -1,0 +1,12 @@
+Je veux faire un transfert de fichier entre un client et un server (les deux en java).
+Voici les fonctionnalites: le client peut envoyer un fichier vers le server , et peut telecharger le fichier envoye.
+Voici les conditions et structures des codes: le client envoie le fichier vers le serveur principal , le serveur principal divise le fichier en trois partie(contenu)
+et l'envoie a 3 differentes serverSlave via adresse IP .Et ce sont les serverSlave qui stockes les fichers partitionnees qui leur sont donnees.
+Et quand le client choisi de telecharger un fichier on n'ecrit que le nom de base et le server cherche dans chaque serverSlave les fichier partitionnees avec ce meme nom de base
+et assemble les fichers dans l'ordre  pour ne donner au client que le fichier complet(assemblee).Ensuite on peut supprimer les fichers stockes en ecrivant seulement leur nom de base
+et c'est le server qui les cherches dans chaque serverSlave pour les supprimes.Il y a aussi une option qui permet de lister les fichiers qu'on peut telecharger. Et apres assemblage/telechargement d'un fichier on n'efface pas ce fichier dans chaque serverSlave
+. Et une derniere conditions: utilise un multi-thread pour permettre a plusieur clients de 
+se connecter au server.Et fait en sorte qu'on peut parcourir les fichiers via le terminal. Enfin ameliore la gestion d'erreurs et des castes
+Maintenant donne moie les codes/classes complet de ce projet ,bien fonctionnel et coherent.
+Donne moi les codes/classes un par un dans la discussion 
+
